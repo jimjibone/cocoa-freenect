@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1898D361797FD4C00D6519F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D351797FD4C00D6519F /* Cocoa.framework */; };
+		D1898D401797FD4C00D6519F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1898D3E1797FD4C00D6519F /* InfoPlist.strings */; };
+		D1898D421797FD4C00D6519F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D411797FD4C00D6519F /* main.m */; };
+		D1898D461797FD4C00D6519F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D1898D441797FD4C00D6519F /* Credits.rtf */; };
+		D1898D491797FD4C00D6519F /* FRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D481797FD4C00D6519F /* FRAppDelegate.m */; };
+		D1898D4C1797FD4D00D6519F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1898D4A1797FD4D00D6519F /* MainMenu.xib */; };
+		D1898D551797FD9600D6519F /* FRFreenect.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D541797FD9600D6519F /* FRFreenect.m */; };
+		D1898D571797FDB000D6519F /* libfreenect.0.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1898D321797FD4C00D6519F /* cocoa-freenect-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoa-freenect-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1898D351797FD4C00D6519F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D1898D381797FD4C00D6519F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D1898D391797FD4C00D6519F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D1898D3A1797FD4C00D6519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1898D3D1797FD4C00D6519F /* cocoa-freenect-example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cocoa-freenect-example-Info.plist"; sourceTree = "<group>"; };
+		D1898D3F1797FD4C00D6519F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1898D411797FD4C00D6519F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1898D431797FD4C00D6519F /* cocoa-freenect-example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocoa-freenect-example-Prefix.pch"; sourceTree = "<group>"; };
+		D1898D451797FD4C00D6519F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D1898D471797FD4C00D6519F /* FRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRAppDelegate.h; sourceTree = "<group>"; };
+		D1898D481797FD4C00D6519F /* FRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRAppDelegate.m; sourceTree = "<group>"; };
+		D1898D4B1797FD4D00D6519F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D1898D531797FD9600D6519F /* FRFreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFreenect.h; sourceTree = "<group>"; };
+		D1898D541797FD9600D6519F /* FRFreenect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFreenect.m; sourceTree = "<group>"; };
+		D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect.0.1.2.dylib; path = /usr/local/Cellar/libfreenect/0.1.2.1/lib/libfreenect.0.1.2.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1898D2F1797FD4C00D6519F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1898D571797FDB000D6519F /* libfreenect.0.1.2.dylib in Frameworks */,
+				D1898D361797FD4C00D6519F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1898D291797FD4C00D6519F = {
+			isa = PBXGroup;
+			children = (
+				D1898D521797FD6D00D6519F /* Objective-C Wrapper */,
+				D1898D3B1797FD4C00D6519F /* cocoa-freenect-example */,
+				D1898D341797FD4C00D6519F /* Frameworks */,
+				D1898D331797FD4C00D6519F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1898D331797FD4C00D6519F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D321797FD4C00D6519F /* cocoa-freenect-example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1898D341797FD4C00D6519F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D351797FD4C00D6519F /* Cocoa.framework */,
+				D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */,
+				D1898D371797FD4C00D6519F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1898D371797FD4C00D6519F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D381797FD4C00D6519F /* AppKit.framework */,
+				D1898D391797FD4C00D6519F /* CoreData.framework */,
+				D1898D3A1797FD4C00D6519F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D1898D3B1797FD4C00D6519F /* cocoa-freenect-example */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D471797FD4C00D6519F /* FRAppDelegate.h */,
+				D1898D481797FD4C00D6519F /* FRAppDelegate.m */,
+				D1898D4A1797FD4D00D6519F /* MainMenu.xib */,
+				D1898D3C1797FD4C00D6519F /* Supporting Files */,
+			);
+			path = "cocoa-freenect-example";
+			sourceTree = "<group>";
+		};
+		D1898D3C1797FD4C00D6519F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D3D1797FD4C00D6519F /* cocoa-freenect-example-Info.plist */,
+				D1898D3E1797FD4C00D6519F /* InfoPlist.strings */,
+				D1898D411797FD4C00D6519F /* main.m */,
+				D1898D431797FD4C00D6519F /* cocoa-freenect-example-Prefix.pch */,
+				D1898D441797FD4C00D6519F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1898D521797FD6D00D6519F /* Objective-C Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D1898D531797FD9600D6519F /* FRFreenect.h */,
+				D1898D541797FD9600D6519F /* FRFreenect.m */,
+			);
+			name = "Objective-C Wrapper";
+			path = "../Objective-C Wrapper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1898D311797FD4C00D6519F /* cocoa-freenect-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1898D4F1797FD4D00D6519F /* Build configuration list for PBXNativeTarget "cocoa-freenect-example" */;
+			buildPhases = (
+				D1898D2E1797FD4C00D6519F /* Sources */,
+				D1898D2F1797FD4C00D6519F /* Frameworks */,
+				D1898D301797FD4C00D6519F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cocoa-freenect-example";
+			productName = "cocoa-freenect-example";
+			productReference = D1898D321797FD4C00D6519F /* cocoa-freenect-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1898D2A1797FD4C00D6519F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "James Reuss";
+			};
+			buildConfigurationList = D1898D2D1797FD4C00D6519F /* Build configuration list for PBXProject "cocoa-freenect-example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D1898D291797FD4C00D6519F;
+			productRefGroup = D1898D331797FD4C00D6519F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1898D311797FD4C00D6519F /* cocoa-freenect-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1898D301797FD4C00D6519F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1898D401797FD4C00D6519F /* InfoPlist.strings in Resources */,
+				D1898D461797FD4C00D6519F /* Credits.rtf in Resources */,
+				D1898D4C1797FD4D00D6519F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1898D2E1797FD4C00D6519F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1898D421797FD4C00D6519F /* main.m in Sources */,
+				D1898D491797FD4C00D6519F /* FRAppDelegate.m in Sources */,
+				D1898D551797FD9600D6519F /* FRFreenect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1898D3E1797FD4C00D6519F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1898D3F1797FD4C00D6519F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D1898D441797FD4C00D6519F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1898D451797FD4C00D6519F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D1898D4A1797FD4D00D6519F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1898D4B1797FD4D00D6519F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1898D4D1797FD4D00D6519F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D1898D4E1797FD4D00D6519F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D1898D501797FD4D00D6519F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cocoa-freenect-example/cocoa-freenect-example-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/lib;
+				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libfreenect/0.1.2.1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D1898D511797FD4D00D6519F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cocoa-freenect-example/cocoa-freenect-example-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/lib;
+				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libfreenect/0.1.2.1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1898D2D1797FD4C00D6519F /* Build configuration list for PBXProject "cocoa-freenect-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1898D4D1797FD4D00D6519F /* Debug */,
+				D1898D4E1797FD4D00D6519F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1898D4F1797FD4D00D6519F /* Build configuration list for PBXNativeTarget "cocoa-freenect-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1898D501797FD4D00D6519F /* Debug */,
+				D1898D511797FD4D00D6519F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1898D2A1797FD4C00D6519F /* Project object */;
+}
