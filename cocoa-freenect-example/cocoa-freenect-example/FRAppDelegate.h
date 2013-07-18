@@ -19,9 +19,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "FRFreenect.h"
+#import "FRPointCloudView.h"
 
-@interface FRAppDelegate : NSObject <NSApplicationDelegate>
+@interface FRAppDelegate : NSObject <NSApplicationDelegate> {
+	FRFreenect *freenectController;
+	NSTimer *displayTimer;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet FRPointCloudView *cloudView;
+
+- (IBAction)startKinect:(id)sender;
+- (IBAction)stopKinect:(id)sender;
+
 
 @end

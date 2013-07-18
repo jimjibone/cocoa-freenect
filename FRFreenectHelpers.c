@@ -8,10 +8,8 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <libfreenect/libfreenect.h>
 #include "FRFreenectHelpers.h"
-
-#define REGISTERED_MIN_DEPTH    0
-#define REGISTERED_SCALE_FACTOR 0.00174
 
 double worldXfromFrame(int x, int z) {
     return (x - 640/2)*(z + REGISTERED_MIN_DEPTH)*REGISTERED_SCALE_FACTOR;
@@ -54,4 +52,19 @@ void frameFromWorld(unsigned int* x, unsigned int *y, double wx, double wy, int 
 	
 	*x = (unsigned int)( (nx > 0.0) ? floor(nx + 0.5) : ceil(nx - 0.5) );
 	*y = (unsigned int)( (ny > 0.0) ? floor(ny + 0.5) : ceil(ny - 0.5) );
+}
+
+
+// Pointer swapping c functions.
+void swapPtr16(uint16_t **firstPtr, uint16_t **secondPtr) {
+	uint16_t *temp = *firstPtr;
+	*firstPtr = *secondPtr;
+	*secondPtr = temp;
+	return;
+}
+void swapPtr8(uint8_t **firstPtr, uint8_t **secondPtr) {
+	uint8_t *temp = *firstPtr;
+	*firstPtr = *secondPtr;
+	*secondPtr = temp;
+	return;
 }

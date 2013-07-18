@@ -19,6 +19,14 @@
 //
 
 #import "FRAppDelegate.h"
+#import "FRFreenectHelpers.h"
+
+@interface FRAppDelegate () {
+	uint16_t *_kinectDepth;
+	uint8_t  *_kinectRGB;
+}
+
+@end
 
 @implementation FRAppDelegate
 
@@ -29,7 +37,43 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	// Initialise and start the Kinect controller.
+	freenectController = [[FRFreenect alloc] initWithLEDColour:LED_GREEN];
+	
+	// Allocate memory for the kinect and display data
+	_kinectDepth	= (uint16_t*)malloc(FREENECT_DEPTH_11BIT_SIZE);
+	_kinectRGB		= (uint8_t*)malloc(FREENECT_VIDEO_RGB_SIZE);
+	
+	displayTimer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:(NSTimeInterval)1.0] interval:0.1 target:self selector:@selector(transferFrames) userInfo:nil repeats:YES];
+	[[NSRunLoop mainRunLoop] addTimer:displayTimer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)transferFrames
+{
+	// Collect new frames.
+	BOOL newData = NO;
+	newData  = [freenectController swapDepthData:&_kinectDepth];
+	newData |= [freenectController swapRGBData:&_kinectRGB];
+	
+	if (newData) {
+		// Send the new frames to the display.
+		[self.cloudView swapInNewDepthFrame:&_kinectDepth RGBFrame:&_kinectRGB];
+	}
+}
+
+- (IBAction)startKinect:(id)sender
+{
+	if (!displayTimer) {
+		displayTimer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:(NSTimeInterval)1.0] interval:0.1 target:self selector:@selector(transferFrames) userInfo:nil repeats:YES];
+		[[NSRunLoop mainRunLoop] addTimer:displayTimer forMode:NSDefaultRunLoopMode];
+	}
+}
+
+- (IBAction)stopKinect:(id)sender
+{
+	if (displayTimer) {
+		[displayTimer invalidate];
+	}
 }
 
 @end

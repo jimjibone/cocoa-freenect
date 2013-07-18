@@ -71,20 +71,6 @@ static void irCallback(freenect_device * dev, void *video, uint32_t timestamp) {
     [(FRFreenect*)freenect_get_user(dev) irCallback:(uint8_t*)video];
 }
 
-// Pointer swapping c functions.
-void swapPtr16(uint16_t **firstPtr, uint16_t **secondPtr) {
-	uint16_t *temp = *firstPtr;
-	*firstPtr = *secondPtr;
-	*secondPtr = temp;
-	return;
-}
-void swapPtr8(uint8_t **firstPtr, uint8_t **secondPtr) {
-	uint8_t *temp = *firstPtr;
-	*firstPtr = *secondPtr;
-	*secondPtr = temp;
-	return;
-}
-
 
 #pragma mark -
 #pragma mark Private Methods
