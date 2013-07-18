@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12112B217980BC80053DE83 /* FRFreenect.m in Sources */ = {isa = PBXBuildFile; fileRef = D12112AF17980BC80053DE83 /* FRFreenect.m */; };
+		D12112B317980BC80053DE83 /* FRFreenectHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = D12112B017980BC80053DE83 /* FRFreenectHelpers.c */; };
 		D1898D361797FD4C00D6519F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D351797FD4C00D6519F /* Cocoa.framework */; };
 		D1898D401797FD4C00D6519F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1898D3E1797FD4C00D6519F /* InfoPlist.strings */; };
 		D1898D421797FD4C00D6519F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D411797FD4C00D6519F /* main.m */; };
 		D1898D461797FD4C00D6519F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D1898D441797FD4C00D6519F /* Credits.rtf */; };
 		D1898D491797FD4C00D6519F /* FRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D481797FD4C00D6519F /* FRAppDelegate.m */; };
 		D1898D4C1797FD4D00D6519F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1898D4A1797FD4D00D6519F /* MainMenu.xib */; };
-		D1898D551797FD9600D6519F /* FRFreenect.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D541797FD9600D6519F /* FRFreenect.m */; };
 		D1898D571797FDB000D6519F /* libfreenect.0.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */; };
-		D1898D59179804D900D6519F /* FRFreenectHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = D1898D58179804D900D6519F /* FRFreenectHelpers.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D12112AE17980BC80053DE83 /* FRFreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFreenect.h; path = ../FRFreenect.h; sourceTree = "<group>"; };
+		D12112AF17980BC80053DE83 /* FRFreenect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFreenect.m; path = ../FRFreenect.m; sourceTree = "<group>"; };
+		D12112B017980BC80053DE83 /* FRFreenectHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = FRFreenectHelpers.c; path = ../FRFreenectHelpers.c; sourceTree = "<group>"; };
+		D12112B117980BC80053DE83 /* FRFreenectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFreenectHelpers.h; path = ../FRFreenectHelpers.h; sourceTree = "<group>"; };
 		D1898D321797FD4C00D6519F /* cocoa-freenect-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoa-freenect-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1898D351797FD4C00D6519F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D1898D381797FD4C00D6519F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -32,11 +36,7 @@
 		D1898D471797FD4C00D6519F /* FRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRAppDelegate.h; sourceTree = "<group>"; };
 		D1898D481797FD4C00D6519F /* FRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRAppDelegate.m; sourceTree = "<group>"; };
 		D1898D4B1797FD4D00D6519F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D1898D531797FD9600D6519F /* FRFreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFreenect.h; sourceTree = "<group>"; };
-		D1898D541797FD9600D6519F /* FRFreenect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFreenect.m; sourceTree = "<group>"; };
 		D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect.0.1.2.dylib; path = /usr/local/Cellar/libfreenect/0.1.2.1/lib/libfreenect.0.1.2.dylib; sourceTree = "<absolute>"; };
-		D1898D58179804D900D6519F /* FRFreenectHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FRFreenectHelpers.c; sourceTree = "<group>"; };
-		D1898D5A179804EC00D6519F /* FRFreenectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFreenectHelpers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +52,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12112AD17980BC10053DE83 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D12112AE17980BC80053DE83 /* FRFreenect.h */,
+				D12112AF17980BC80053DE83 /* FRFreenect.m */,
+				D12112B017980BC80053DE83 /* FRFreenectHelpers.c */,
+				D12112B117980BC80053DE83 /* FRFreenectHelpers.h */,
+			);
+			name = Wrapper;
+			sourceTree = "<group>";
+		};
 		D1898D291797FD4C00D6519F = {
 			isa = PBXGroup;
 			children = (
-				D1898D521797FD6D00D6519F /* Objective-C Wrapper */,
+				D12112AD17980BC10053DE83 /* Wrapper */,
 				D1898D3B1797FD4C00D6519F /* cocoa-freenect-example */,
 				D1898D341797FD4C00D6519F /* Frameworks */,
 				D1898D331797FD4C00D6519F /* Products */,
@@ -111,18 +122,6 @@
 				D1898D441797FD4C00D6519F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D1898D521797FD6D00D6519F /* Objective-C Wrapper */ = {
-			isa = PBXGroup;
-			children = (
-				D1898D531797FD9600D6519F /* FRFreenect.h */,
-				D1898D541797FD9600D6519F /* FRFreenect.m */,
-				D1898D5A179804EC00D6519F /* FRFreenectHelpers.h */,
-				D1898D58179804D900D6519F /* FRFreenectHelpers.c */,
-			);
-			name = "Objective-C Wrapper";
-			path = "../Objective-C Wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +191,8 @@
 			files = (
 				D1898D421797FD4C00D6519F /* main.m in Sources */,
 				D1898D491797FD4C00D6519F /* FRAppDelegate.m in Sources */,
-				D1898D551797FD9600D6519F /* FRFreenect.m in Sources */,
-				D1898D59179804D900D6519F /* FRFreenectHelpers.c in Sources */,
+				D12112B217980BC80053DE83 /* FRFreenect.m in Sources */,
+				D12112B317980BC80053DE83 /* FRFreenectHelpers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +336,7 @@
 				D1898D511797FD4D00D6519F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
