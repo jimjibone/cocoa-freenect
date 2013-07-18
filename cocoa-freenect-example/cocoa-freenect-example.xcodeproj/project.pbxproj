@@ -15,6 +15,7 @@
 		D1898D4C1797FD4D00D6519F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1898D4A1797FD4D00D6519F /* MainMenu.xib */; };
 		D1898D551797FD9600D6519F /* FRFreenect.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D541797FD9600D6519F /* FRFreenect.m */; };
 		D1898D571797FDB000D6519F /* libfreenect.0.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */; };
+		D1898D59179804D900D6519F /* FRFreenectHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = D1898D58179804D900D6519F /* FRFreenectHelpers.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		D1898D531797FD9600D6519F /* FRFreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFreenect.h; sourceTree = "<group>"; };
 		D1898D541797FD9600D6519F /* FRFreenect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFreenect.m; sourceTree = "<group>"; };
 		D1898D561797FDB000D6519F /* libfreenect.0.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect.0.1.2.dylib; path = /usr/local/Cellar/libfreenect/0.1.2.1/lib/libfreenect.0.1.2.dylib; sourceTree = "<absolute>"; };
+		D1898D58179804D900D6519F /* FRFreenectHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FRFreenectHelpers.c; sourceTree = "<group>"; };
+		D1898D5A179804EC00D6519F /* FRFreenectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFreenectHelpers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 			children = (
 				D1898D531797FD9600D6519F /* FRFreenect.h */,
 				D1898D541797FD9600D6519F /* FRFreenect.m */,
+				D1898D5A179804EC00D6519F /* FRFreenectHelpers.h */,
+				D1898D58179804D900D6519F /* FRFreenectHelpers.c */,
 			);
 			name = "Objective-C Wrapper";
 			path = "../Objective-C Wrapper";
@@ -188,6 +193,7 @@
 				D1898D421797FD4C00D6519F /* main.m in Sources */,
 				D1898D491797FD4C00D6519F /* FRAppDelegate.m in Sources */,
 				D1898D551797FD9600D6519F /* FRFreenect.m in Sources */,
+				D1898D59179804D900D6519F /* FRFreenectHelpers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +290,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocoa-freenect-example/cocoa-freenect-example-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +307,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocoa-freenect-example/cocoa-freenect-example-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

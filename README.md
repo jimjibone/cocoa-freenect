@@ -32,3 +32,8 @@ Are you very very confused?
 Well I can help! There is a good chance I have already come across your problem and have a solution.
 
 If you cannot find a solution here then please open an [issue](https://github.com/jimjibone/cocoa-freenect/issues).
+
+
+## Licensing
+
+This project is covered by the Apache v2 Licence. Please see the LICENSE file included with this project for full information.
