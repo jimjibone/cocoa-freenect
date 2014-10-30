@@ -137,7 +137,7 @@ static void irCallback(freenect_device * dev, void *video, uint32_t timestamp) {
 	
     [super dealloc];
 }
-- (void)setDelegate:(id)aDelegate
+- (void)setDelegate:(id<FRFreenectDelegate>)aDelegate
 {
 	delegate = aDelegate;
 }

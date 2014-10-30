@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B88201F1A026251006992B1 /* libfreenect.0.5.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B88201E1A026251006992B1 /* libfreenect.0.5.0.dylib */; };
 		D12112B217980BC80053DE83 /* FRFreenect.m in Sources */ = {isa = PBXBuildFile; fileRef = D12112AF17980BC80053DE83 /* FRFreenect.m */; };
 		D12112B317980BC80053DE83 /* FRFreenectHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = D12112B017980BC80053DE83 /* FRFreenectHelpers.c */; };
 		D12112B617980CCF0053DE83 /* FRPointCloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12112B517980CCF0053DE83 /* FRPointCloudView.m */; };
@@ -14,7 +15,6 @@
 		D12112BB17980D200053DE83 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12112BA17980D200053DE83 /* OpenGL.framework */; };
 		D12112BD17980D250053DE83 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12112BC17980D250053DE83 /* GLUT.framework */; };
 		D12112BF17980D310053DE83 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12112BE17980D310053DE83 /* CoreVideo.framework */; };
-		D12112C117981B550053DE83 /* libfreenect.0.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D12112C017981B550053DE83 /* libfreenect.0.1.2.dylib */; };
 		D1898D361797FD4C00D6519F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1898D351797FD4C00D6519F /* Cocoa.framework */; };
 		D1898D401797FD4C00D6519F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1898D3E1797FD4C00D6519F /* InfoPlist.strings */; };
 		D1898D421797FD4C00D6519F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1898D411797FD4C00D6519F /* main.m */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B88201E1A026251006992B1 /* libfreenect.0.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect.0.5.0.dylib; path = ../../../../../../../usr/local/Cellar/libfreenect/0.5.0/lib/libfreenect.0.5.0.dylib; sourceTree = "<group>"; };
 		D12112AE17980BC80053DE83 /* FRFreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFreenect.h; path = ../FRFreenect.h; sourceTree = "<group>"; };
 		D12112AF17980BC80053DE83 /* FRFreenect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFreenect.m; path = ../FRFreenect.m; sourceTree = "<group>"; };
 		D12112B017980BC80053DE83 /* FRFreenectHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = FRFreenectHelpers.c; path = ../FRFreenectHelpers.c; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		D12112BA17980D200053DE83 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D12112BC17980D250053DE83 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		D12112BE17980D310053DE83 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		D12112C017981B550053DE83 /* libfreenect.0.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect.0.1.2.dylib; path = ../../../../../../usr/local/Cellar/libfreenect/0.1.2.1/lib/libfreenect.0.1.2.dylib; sourceTree = "<group>"; };
 		D1898D321797FD4C00D6519F /* cocoa-freenect-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoa-freenect-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1898D351797FD4C00D6519F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D1898D381797FD4C00D6519F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12112C117981B550053DE83 /* libfreenect.0.1.2.dylib in Frameworks */,
+				9B88201F1A026251006992B1 /* libfreenect.0.5.0.dylib in Frameworks */,
 				D12112BF17980D310053DE83 /* CoreVideo.framework in Frameworks */,
 				D12112BD17980D250053DE83 /* GLUT.framework in Frameworks */,
 				D12112BB17980D200053DE83 /* OpenGL.framework in Frameworks */,
@@ -99,7 +99,7 @@
 		D1898D341797FD4C00D6519F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D12112C017981B550053DE83 /* libfreenect.0.1.2.dylib */,
+				9B88201E1A026251006992B1 /* libfreenect.0.5.0.dylib */,
 				D12112BE17980D310053DE83 /* CoreVideo.framework */,
 				D12112BC17980D250053DE83 /* GLUT.framework */,
 				D12112BA17980D200053DE83 /* OpenGL.framework */,
@@ -317,7 +317,7 @@
 				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/libfreenect/0.1.2.1/lib,
+					/usr/local/Cellar/libfreenect/0.5.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -334,7 +334,7 @@
 				INFOPLIST_FILE = "cocoa-freenect-example/cocoa-freenect-example-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/libfreenect/0.1.2.1/lib,
+					/usr/local/Cellar/libfreenect/0.5.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
