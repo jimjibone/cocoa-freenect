@@ -40,7 +40,7 @@ typedef enum {
 @end
 
 @interface FRFreenect : NSObject {
-	id delegate;
+	id<FRFreenectDelegate> delegate;
 }
 
 @property (nonatomic, readonly) NSNumber *depthFPS;
@@ -55,7 +55,7 @@ typedef enum {
 - (id)initWithLEDColour:(freenect_led_options)ledColour;
 - (id)init;
 
-- (void)setDelegate:(id)aDelegate;
+- (void)setDelegate:(id<FRFreenectDelegate>)aDelegate;
 
 - (BOOL)swapDepthData:(uint16_t**)swapData;
 - (BOOL)swapRGBData:(uint8_t**)swapData;
